@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="js/store.js" async></script>
+    <title>Product </title>
+</head>
+<style>
+    
+</style>
+<body>
+  <nav>
+    <div class="left_nav">
+      <div class="nav_logo">
+        <p>CANTEEN MEAL</p> 
+      </div>
+      <div class="nav_menu">
+        <ul>
+          <li>
+            <a href="homepage.html" class="link">HOME</a>
+            <div class="link_border"></div>
+          </li>
+          <li>
+            <a href="#" class="link">MENU</a>
+            <div class="link_border"></div>
+          </li>
+         
+          <li>
+          <a href="aboutus.html" class="link">ABOUT US</a>
+          <div class="link_border"></div>
+        </li>
+        <li>
+          <a href="profile.html" class="link">PROFILE</a>
+          <div class="link_border"></div>
+        </li>
+        <li>
+          <a href="/logout" class="link">SIGN OUT</a>
+          <div class="link_border"></div>
+      </li>
+       
+      
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="right_nav">
+      <div class="nav_cart_box">
+        <i class="bx bx-cart"></i>
+      </div>
+      <div class="dropdown">
+        <div class="menu_bars" onclick="myMenuFunction()">
+          <div class="menu_bars_btn">
+            <img src="images/bar.png" class="bar_1">
+            <img src="images/bar.png" class="bar_2">
+          </div>
+          <div class="nav_dropdown_menu" id="navDropdownMenu">
+            <ul>
+              <li>
+                <a href="homepage.html" class="link">HOME</a>
+                <div class="link_border"></div>
+              </li>
+              <li>
+                <a href="#" class="link">MENU</a>
+                <div class="link_border"></div>
+              </li>
+              <li>
+                <a href="aboutus.html" class="link">ABOUT US</a>
+                <div class="link_border"></div>
+              </li>
+             
+            
+              <li>
+                <a href="profile.html" class="link">PROFILE</a>
+                <div class="link_border"></div>
+              </li>
+              <li>
+                <a href="/logout" class="link">SIGN OUT</a>
+                <div class="link_border"></div>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+      
+
+    <h1 class="headingsok">Menu Items</h1>
+  </header>
+  <section class="products" id="products">
+      <div class="products-container">
+      <div class="box">
+          <div class="shop-item">
+              <span class="shop-item-title">Cold Drinks</span>
+              <img class="shop-item-image" src="images/sprite.jpg">
+              <div class="shop-item-details">
+                   <span class="shop-item-price">Rs.50</span>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                  <i class='bx bx-heart'></i>
+              </div>
+              </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Puri Tarkari</span>
+                    <img class="shop-item-image" src="images/puri tarkari.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.50</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Jhol Momo</span>
+                    <img class="shop-item-image" src="images/jholmomo.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.120</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Veg Khana</span>
+                    <img class="shop-item-image" src="images/vegkhana.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Veg Chowmein</span>
+                    <img class="shop-item-image" src="images/vegchowein.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.50</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Black Tea</span>
+                    <img class="shop-item-image" src="images/blacktea.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.15</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Boiled Egg</span>
+                    <img class="shop-item-image" src="images/boiledegg.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.25</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Chicken Khana</span>
+                    <img class="shop-item-image" src="images/chickenkhana.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.200</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Fried Momo</span>
+                    <img class="shop-item-image" src="images/friedmomo.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.120</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div> <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Chicken Chowmein</span>
+                    <img class="shop-item-image" src="images/chicken chowmein.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Veg Fried Rice</span>
+                    <img class="shop-item-image" src="images/vegfriedrice.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.80</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Milk Tea</span>
+                    <img class="shop-item-image" src="images/milktea.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.20</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Chana Set</span>
+                    <img class="shop-item-image" src="images/chana.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.50</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Milk Coffee </span>
+                    <img class="shop-item-image" src="images/milkcoffee.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.50</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Samosa</span>
+                    <img class="shop-item-image" src="images/samosaa.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.25</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Steam Momo</span>
+                    <img class="shop-item-image" src="images/steam momo.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Hot Lemon With Honey</span>
+                    <img class="shop-item-image" src="images/hotlemonwithhoney.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.80</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Samosa Chat</span>
+                    <img class="shop-item-image" src="images/samosa chat.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.80</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Chicken Fried Rice</span>
+                    <img class="shop-item-image" src="images/chicken fried rice.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.130</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Veg Thukpa</span>
+                    <img class="shop-item-image" src="images/thukpa.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.70</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Current Soup</span>
+                    <img class="shop-item-image" src="images/cuurent soup.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.80</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div> <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Chilly Momo</span>
+                    <img class="shop-item-image" src="images/chillymomo.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.120</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+               <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Chatpate</span>
+                    <img class="shop-item-image" src="images/chatpate.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.50</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="shop-item">
+                    <span class="shop-item-title">Veg Pakauda</span>
+                    <img class="shop-item-image" src="images/veg pakauda.png">
+                    <div class="shop-item-details">
+                         <span class="shop-item-price">Rs.80</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+              </div>
+              
+   
+  </section>
+
+  <section class="container content=section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+      <span class="cart-item cart-header cart-column">ITEM </span>
+      <span class="cart-price cart-header cart-column">PRICE </span>
+      <span class="cart-quantity cart-header cart-column">QUANTITY </span>
+    </div>
+    <div class ="cart-items">
+   
+  </div>
+    <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">Rs.0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" 
+    type ="button"> PURCHASE </button>
+  </section>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/homepage.css">
+</head>
+<body>
+<div class="body_items">
+
+  <div class="Elevate_your_lunch_break">
+    <p>Elevate Your
+        Lunch Break
+    </p>
+  </div>
+</div>
+<div class="container">
+  <nav>
+    <div class="left_nav">
+      <div class="nav_logo">
+        <p>CANTEEN MEAL</p> 
+      </div>
+      <div class="nav_menu">
+        <ul>
+          <li>
+            <a href="#" class="link">HOME</a>
+            <div class="link_border"></div>
+          </li>
+          <li>
+            <a href="product.html" class="link">MENU</a>
+            <div class="link_border"></div>
+          </li>
+         
+          <li>
+          <a href="aboutus.html" class="link">ABOUT US</a>
+          <div class="link_border"></div>
+        </li>
+        <li>
+          <a href="profile.html" class="link">PROFILE</a>
+          <div class="link_border"></div>
+        </li>
+        <li>
+          <a href="/logout" class="link">SIGN OUT</a>
+          <div class="link_border"></div>
+      </li>
+       
+      
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="right_nav">
+      <div class="nav_cart_box">
+        <i class="bx bx-cart"></i>
+      </div>
+      <div class="dropdown">
+        <div class="menu_bars" onclick="myMenuFunction()">
+          <div class="menu_bars_btn">
+            <img src="images/bar.png" class="bar_1">
+            <img src="images/bar.png" class="bar_2">
+          </div>
+          <div class="nav_dropdown_menu" id="navDropdownMenu">
+            <ul>
+              <li>
+                <a href="#" class="link">HOME</a>
+                <div class="link_border"></div>
+              </li>
+              <li>
+                <a href="product.html" class="link">MENU</a>
+                <div class="link_border"></div>
+              </li>
+              <li>
+                <a href="aboutus.html" class="link">ABOUT US</a>
+                <div class="link_border"></div>
+              </li>
+             
+            
+              <li>
+                <a href="profile.html" class="link">PROFILE</a>
+                <div class="link_border"></div>
+              </li>
+              <li>
+                <a href="/logout" class="link">SIGN OUT</a>
+                <div class="link_border"></div>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="main">
+    <div class="left_col">
+      <div class="pen_title">
+        <p>Chicken Khana Set</p>
+      </div>
+      <div class="line">
+        <hr>
+      </div>
+      <div class="pen_description">
+        <p>Savor the flavors of Nepal with our Chicken Khana Set. Tender chicken, marinated in traditional Nepali spices and cooked to perfection, served with steamed rice, dal, and achar. It's a taste of the Himalayas in every bite.</p>
+      </div>
+      <div class="cart">
+        <button class="cart_btn" onclick="addToCart()">Menu Items</button>
+        <p class="price">Rs.200</p>
+      </div>
+      
+
+      <div class="shop_box">
+        <div class="shop_item_container">
+          <div class="pen_img_box">
+            <img src="images/chowmein.png" class="pen_img">
+          </div>
+          <div class="pen_name_price">
+            <h3>Chicken Chowein</h3>
+            <p>Rs.100</p>
+          </div>
+          <div class="add_to_shop">
+            <i class="bx bx-cart" onclick="addToCart()"></i>
+                   </div>
+        </div>
+        <div class="shop_item_container">
+          <div class="pen_img_box">
+            <img src="images/chillymomo.png" class="pen_img">
+          </div>
+          <div class="pen_name_price">
+            <h3>Chilly Momo</h3>
+            <p>Rs.120</p>
+          </div>
+          <div class="add_to_shop">
+            <i class="bx bx-cart" onclick="addToCart()"></i>
+          </div>
+        </div>
+        <div class="shop_item_container">
+          <div class="pen_img_box">
+            <img src="images/thukpa.png" class="pen_img">
+          </div>
+          <div class="pen_name_price">
+            <h3>Veg Thukpa</h3>
+            <p>Rs.70</p>
+          </div>
+          <div class="add_to_shop">
+            <i class="bx bx-cart" onclick="addToCart()"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right_col">
+      <img src="images/chickenkhana.png" class="featured_img" alt="">
+      
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+
+  function myMenuFunction() {
+    var i = document.getElementById("navDropdownMenu");
+
+    if(i.className === "nav_dropdown_menu") {
+      i.className += " responsive";
+    } else {
+      i.className = "nav_dropdown_menu";
+    }
+  }
+
+
+
+  function addToCart() {
+    window.location.href='product.html';
+  }
+
+
+</script>
+
+</body>
+</html>
